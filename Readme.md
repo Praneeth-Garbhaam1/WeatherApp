@@ -1,0 +1,1 @@
+This is a weather application which displays weather forecast for cities on text search
