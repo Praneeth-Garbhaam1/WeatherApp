@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.content {
+  position: absolute;
+  width: 100%;
+}
+nav {
+  margin: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+}
+.container {
+  margin: 5rem 17rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.searchBar {
+  position: relative;
+}
+.searchBar input {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 22px;
+  color: #111;
+  font-weight: 800;
+}
+.searchBar input:focus-visible {
+  outline: none;
+}
+.searchBar .search-icon {
+  position: absolute;
+  right: 26px;
+  top: 11px;
+}
+.searchBar .search-icon .fa {
+  color: #4d99e7;
+}
+.weather-info {
+  font-size: xxx-large;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.high,
+.low,
+.precipitation,
+.wind,
+.sunrise,
+.sunset {
+  display: grid;
+  font-weight: 800;
+  width: 200px;
+}
+.high span,
+.low span,
+.precipitation span,
+.wind span,
+.sunrise span,
+.sunset span {
+  font-size: 20px;
+  color: #0053a9;
+}
+.first-row {
+  display: flex;
+  text-align: center;
+}
+.statistics {
+  margin: 1rem;
+  padding: 1rem;
+  height: 160px;
+  border-radius: 8px;
+  background: rgb(246 237 237 / 57%);
+}
+
+.first-row:nth-child(2) {
+  margin-top: 20px;
+}
+button,
+.material-icons {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.location h2 {
+  font-size: 1em;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
